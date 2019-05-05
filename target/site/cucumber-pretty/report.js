@@ -80,7 +80,7 @@ formatter.match({
   "location": "LoginSteps.execute_login_webservice_and_login_successfully(String)"
 });
 formatter.result({
-  "duration": 2293946833,
+  "duration": 2220810057,
   "status": "passed"
 });
 });
