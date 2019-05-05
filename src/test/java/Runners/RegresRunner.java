@@ -12,7 +12,7 @@ import Lib.Lib;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features = "/Users/sami/Desktop/eclipse-workspace2k19/RegresAPI_Testing/src/resources/java/Features", glue = "Steps", tags = {}, format = {
+@CucumberOptions(features = "/Users/sami/Desktop/eclipse-workspace2k19/RegresAPI_Testing/src/resources/java/Features", glue = "Steps", tags = {"@Login"}, format = {
 		"pretty", "html:target/site/cucumber-pretty" })
 public class RegresRunner extends AbstractTestNGCucumberTests {
 
