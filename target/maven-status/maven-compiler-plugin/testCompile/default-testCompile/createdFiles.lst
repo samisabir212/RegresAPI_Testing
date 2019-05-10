@@ -1,12 +1,14 @@
+AWS_Util/Aws_util.class
+Services/CreateUser.class
+Services/Register.class
+Services/Login.class
 UnitTests/TestLoginService.class
 Services/GetListOfUsers.class
 Steps/LoginSteps.class
 Runners/RegresRunner.class
 Constants/Constants.class
 Services/UpdateUser.class
-Services/CreateUser.class
 Lib/Lib.class
 Lib/Logger.class
-Services/Register.class
-Services/Login.class
 UnitTests/TestCreateUser.class
+UnitTests/testExtentReportertestNG.class

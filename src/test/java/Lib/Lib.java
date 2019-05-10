@@ -278,15 +278,15 @@ public class Lib {
 		projpath = "/Users/sami/Desktop/Automation/" + testerDirName + "/Parabank/Runs/";
 
 		/// Users/sami/Desktop/Automation/sidrissi/Parabank/Runs
-		File dir = new File(projpath + getcurrentdatefolder() + Constants.Environment);
+		File dir = new File(projpath + getcurrentdateyyMMddHHmm() + Constants.Environment);
 
-		System.out.println("prject path : " + projpath + getcurrentdatefolder() + Constants.Environment);
+		System.out.println("prject path : " + projpath + getcurrentdateyyMMddHHmm() + Constants.Environment);
 		dir.mkdir();
 
 		return dir.getAbsolutePath();
 	}
 
-	public static String getcurrentdatefolder() {
+	public static String getcurrentdateyyMMddHHmm() {
 
 		DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HHmm");
 		Date date = new Date();
@@ -345,8 +345,8 @@ public class Lib {
 
 	}
 
-	public static String readproperties(String key) throws IOException {
-		File fl = new File("src/test/resources/Properties/Endpoints/Endpoints.properties");
+	public static String readproperties(String key,String propPath) throws IOException {
+		File fl = new File(propPath);
 		FileInputStream fio = new FileInputStream(fl);
 		Properties prop = new Properties();
 		prop.load(fio);
@@ -760,7 +760,7 @@ public class Lib {
 
 		String SSPAG_Path = projpath + "DailyExecution\\Runs\\";
 
-		File dir = new File(SSPAG_Path + getcurrentdatefolder());
+		File dir = new File(SSPAG_Path + getcurrentdateyyMMddHHmm());
 
 		dir.mkdir();
 		// System.out.println("hahha "+dir.getCanonicalPath());
