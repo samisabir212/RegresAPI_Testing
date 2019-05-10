@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 10, 2019 05:26:05 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 10, 2019 06:14:10 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +123,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>5</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +138,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='13.514%'><span class='strong'>5</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>18</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='2.703%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='83.784%'>31</span> others
 				</div>
 			</div>
 		</div>
@@ -158,14 +159,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>InvalidEmail</span>
-						<span class='test-time'>May 10, 2019 05:26:06 PM</span>
+						<span class='test-time'>May 10, 2019 06:14:11 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 10, 2019 05:26:06 PM</span>
-	<span class='label end-time'>May 10, 2019 05:26:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+746ms</span>
+	<span class='label start-time'>May 10, 2019 06:14:11 PM</span>
+	<span class='label end-time'>May 10, 2019 06:14:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+222ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -177,20 +178,35 @@
 				</tr>
 			</thead>
 			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>InvalidEmail : Passed</td>
+				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:06 PM</td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>Endpoint : https://reqres.in/api/login</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
 					<td class='step-details'>Request Headers : {Content-Type=application/json}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:06 PM</td>
+					<td class='timestamp'>6:14:16 PM</td>
 					<td class='step-details'>Request body :{"password":"cityslicka","email":"inval212@gmail.com"}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:07 PM</td>
-					<td class='step-details'>InvalidEmail : response body : {"error":"user not found"}</td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>response status code : 400</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>response body : {"error":"user not found"}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -199,17 +215,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>InvalidPassword</span>
-						<span class='test-time'>May 10, 2019 05:26:07 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>May 10, 2019 06:14:16 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 10, 2019 05:26:07 PM</span>
-	<span class='label end-time'>May 10, 2019 05:26:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+333ms</span>
+	<span class='label start-time'>May 10, 2019 06:14:16 PM</span>
+	<span class='label end-time'>May 10, 2019 06:14:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+277ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -221,20 +237,40 @@
 				</tr>
 			</thead>
 			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>InvalidPassword : Failed</td>
+				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:07 PM</td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>Assertion Failed : expected [400] but found [200]</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>Endpoint : https://reqres.in/api/login</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
 					<td class='step-details'>Request Headers : {Content-Type=application/json}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:07 PM</td>
-					<td class='step-details'>Request body :{"password":"P@ssword","email":"eve.holt@reqres.in"}</td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>Request body :{"password":"randomPass212","email":"eve.holt@reqres.in"}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:08 PM</td>
-					<td class='step-details'>InvalidPassword : response body : {"token":"QpwL5tke4Pnpja7X4"}</td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>response status code : 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>response body : {"token":"QpwL5tke4Pnpja7X4"}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -246,14 +282,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>BlankEmail</span>
-						<span class='test-time'>May 10, 2019 05:26:08 PM</span>
+						<span class='test-time'>May 10, 2019 06:14:16 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 10, 2019 05:26:08 PM</span>
-	<span class='label end-time'>May 10, 2019 05:26:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+760ms</span>
+	<span class='label start-time'>May 10, 2019 06:14:16 PM</span>
+	<span class='label end-time'>May 10, 2019 06:14:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+344ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -265,20 +301,35 @@
 				</tr>
 			</thead>
 			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>BlankEmail : Passed</td>
+				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:08 PM</td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>Endpoint : https://reqres.in/api/login</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
 					<td class='step-details'>Request Headers : {Content-Type=application/json}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:08 PM</td>
+					<td class='timestamp'>6:14:16 PM</td>
 					<td class='step-details'>Request body :{"password":"cityslicka","email":""}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:08 PM</td>
-					<td class='step-details'>BlankEmail : response body : {"error":"Missing email or username"}</td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>response status code : 400</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>response body : {"error":"Missing email or username"}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -290,14 +341,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>BlankPassword</span>
-						<span class='test-time'>May 10, 2019 05:26:08 PM</span>
+						<span class='test-time'>May 10, 2019 06:14:16 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 10, 2019 05:26:08 PM</span>
-	<span class='label end-time'>May 10, 2019 05:26:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+273ms</span>
+	<span class='label start-time'>May 10, 2019 06:14:16 PM</span>
+	<span class='label end-time'>May 10, 2019 06:14:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+341ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -309,20 +360,35 @@
 				</tr>
 			</thead>
 			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>BlankPassword : Passed</td>
+				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:08 PM</td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>Endpoint : https://reqres.in/api/login</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:17 PM</td>
 					<td class='step-details'>Request Headers : {Content-Type=application/json}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:08 PM</td>
+					<td class='timestamp'>6:14:17 PM</td>
 					<td class='step-details'>Request body :{"password":"","email":"eve.holt@reqres.in"}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:09 PM</td>
-					<td class='step-details'>BlankPassword : response body : {"error":"Missing password"}</td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>response status code : 400</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>response body : {"error":"Missing password"}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -334,14 +400,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>NoEmail</span>
-						<span class='test-time'>May 10, 2019 05:26:09 PM</span>
+						<span class='test-time'>May 10, 2019 06:14:17 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 10, 2019 05:26:09 PM</span>
-	<span class='label end-time'>May 10, 2019 05:26:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+242ms</span>
+	<span class='label start-time'>May 10, 2019 06:14:17 PM</span>
+	<span class='label end-time'>May 10, 2019 06:14:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+343ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -353,20 +419,35 @@
 				</tr>
 			</thead>
 			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>NoEmail : Passed</td>
+				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:09 PM</td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>Endpoint : https://reqres.in/api/login</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:17 PM</td>
 					<td class='step-details'>Request Headers : {Content-Type=application/json}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:09 PM</td>
+					<td class='timestamp'>6:14:17 PM</td>
 					<td class='step-details'>Request body :{"password":"cityslicka"}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:09 PM</td>
-					<td class='step-details'>NoEmail : response body : {"error":"Missing email or username"}</td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>response status code : 400</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>response body : {"error":"Missing email or username"}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -378,14 +459,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>NoPassword</span>
-						<span class='test-time'>May 10, 2019 05:26:09 PM</span>
+						<span class='test-time'>May 10, 2019 06:14:17 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 10, 2019 05:26:09 PM</span>
-	<span class='label end-time'>May 10, 2019 05:26:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+322ms</span>
+	<span class='label start-time'>May 10, 2019 06:14:17 PM</span>
+	<span class='label end-time'>May 10, 2019 06:14:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+244ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -397,20 +478,35 @@
 				</tr>
 			</thead>
 			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>NoPassword : Passed</td>
+				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:09 PM</td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>Endpoint : https://reqres.in/api/login</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:17 PM</td>
 					<td class='step-details'>Request Headers : {Content-Type=application/json}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:09 PM</td>
+					<td class='timestamp'>6:14:17 PM</td>
 					<td class='step-details'>Request body :{"password":"cityslicka","email":"inval212@gmail.com"}</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:26:09 PM</td>
-					<td class='step-details'>NoPassword : response body : {"error":"user not found"}</td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>response status code : 400</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:17 PM</td>
+					<td class='step-details'>response body : {"error":"user not found"}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -458,25 +554,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>37</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 10, 2019 05:26:05 PM</div>
+					<div class='panel-lead'>May 10, 2019 06:14:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 10, 2019 05:26:15 PM</div>
+			 		<div class='panel-lead'>May 10, 2019 06:14:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 10s+525ms</div>
+					<div class='panel-lead'>0h 0m 12s+592ms</div>
 				</div>
 			</div>
 		</div>
@@ -489,22 +585,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 6,
-				failParent: 0,
+				passParent: 5,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 0,
-				failChild: 0,
+				passChild: 5,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 18,
-				exceptionsChild: 0,
+				infoChild: 31,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

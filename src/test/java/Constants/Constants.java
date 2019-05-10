@@ -20,8 +20,8 @@ import io.restassured.specification.RequestSpecification;
 
 public class Constants {
 
-
-	// Create object of ExtentReports class- This is main class which will createreport
+	// Create object of ExtentReports class- This is main class which will
+	// createreport
 
 	public static String rcTicket = null;
 	public static String releaseNumber = null;
@@ -66,14 +66,14 @@ public class Constants {
 	public static HttpResponse httpResponse = null;
 	public static RequestSpecification httpRequest = null;
 	public static String requestBodySoap = null;
-
+	public static int actualResponseStatusCode;
 	public static String responseBody = null;
 	public static List<String> failedValidationMessageList = new ArrayList<String>();
 	public static int responseStatusCode;
 	public static int totalValidationCount;
 	public static int passedValidationCount;
 	public static int failedValidationCount;
-
+	public static String actualErrorMessage= null;
 	public static String tStatus = null;
 	public static String comment = null;
 	public static String runResultsFileName = null;
@@ -98,8 +98,6 @@ public class Constants {
 	public static int expectedResponseStatusCode = 0;
 	public static String expectedResponseMessage = null;
 
-	public static Map<String, String> headersMap = new HashMap<String, String>();
 	public static Headers responseHeaders;
-	public static String actualUIbalance = null;
 
 }

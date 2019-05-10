@@ -6,15 +6,15 @@ Feature: Login Feature for reqres.in
 @Negative
 Scenario Outline: Negative testCases For Login Feature
 
-	Then execute login service for negative testcases "<Testname>"
+	Then execute login service for negative testcases "<Testname>" "<expectedErrorMessage>"
 	
 
 	Examples:
 	
-	| Testname 	      |
-	| InvalidEmail    |
-	| InvalidPassword |
-	| BlankEmail      |
-	| BlankPassword   |
-	| NoEmail         |
-	| NoPassword      |
+	| Testname 	      | expectedErrorMessage      |
+	| InvalidEmail    | user not found            |
+	| InvalidPassword | invalid password          |
+	| BlankEmail      | Missing email or username |
+	| BlankPassword   | Missing password          |
+	| NoEmail         | Missing email or username |
+	| NoPassword      | user not found            |

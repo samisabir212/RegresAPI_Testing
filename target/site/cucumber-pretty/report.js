@@ -22,7 +22,7 @@ formatter.scenarioOutline({
 });
 formatter.step({
   "line": 9,
-  "name": "execute login service for negative testcases \"\u003cTestname\u003e\"",
+  "name": "execute login service for negative testcases \"\u003cTestname\u003e\" \"\u003cexpectedErrorMessage\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -33,49 +33,56 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "Testname"
+        "Testname",
+        "expectedErrorMessage"
       ],
       "line": 14,
       "id": "login-feature-for-reqres.in;negative-testcases-for-login-feature;;1"
     },
     {
       "cells": [
-        "InvalidEmail"
+        "InvalidEmail",
+        "user not found"
       ],
       "line": 15,
       "id": "login-feature-for-reqres.in;negative-testcases-for-login-feature;;2"
     },
     {
       "cells": [
-        "InvalidPassword"
+        "InvalidPassword",
+        "invalid password"
       ],
       "line": 16,
       "id": "login-feature-for-reqres.in;negative-testcases-for-login-feature;;3"
     },
     {
       "cells": [
-        "BlankEmail"
+        "BlankEmail",
+        "Missing email or username"
       ],
       "line": 17,
       "id": "login-feature-for-reqres.in;negative-testcases-for-login-feature;;4"
     },
     {
       "cells": [
-        "BlankPassword"
+        "BlankPassword",
+        "Missing password"
       ],
       "line": 18,
       "id": "login-feature-for-reqres.in;negative-testcases-for-login-feature;;5"
     },
     {
       "cells": [
-        "NoEmail"
+        "NoEmail",
+        "Missing email or username"
       ],
       "line": 19,
       "id": "login-feature-for-reqres.in;negative-testcases-for-login-feature;;6"
     },
     {
       "cells": [
-        "NoPassword"
+        "NoPassword",
+        "user not found"
       ],
       "line": 20,
       "id": "login-feature-for-reqres.in;negative-testcases-for-login-feature;;7"
@@ -99,9 +106,10 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "execute login service for negative testcases \"InvalidEmail\"",
+  "name": "execute login service for negative testcases \"InvalidEmail\" \"user not found\"",
   "matchedColumns": [
-    0
+    0,
+    1
   ],
   "keyword": "Then "
 });
@@ -110,12 +118,16 @@ formatter.match({
     {
       "val": "InvalidEmail",
       "offset": 46
+    },
+    {
+      "val": "user not found",
+      "offset": 61
     }
   ],
-  "location": "LoginSteps.execute_login_service_for_negative_testcases(String)"
+  "location": "LoginSteps.execute_login_service_for_negative_testcases(String,String)"
 });
 formatter.result({
-  "duration": 1847774949,
+  "duration": 4315600900,
   "status": "passed"
 });
 formatter.scenario({
@@ -134,9 +146,10 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "execute login service for negative testcases \"InvalidPassword\"",
+  "name": "execute login service for negative testcases \"InvalidPassword\" \"invalid password\"",
   "matchedColumns": [
-    0
+    0,
+    1
   ],
   "keyword": "Then "
 });
@@ -145,12 +158,16 @@ formatter.match({
     {
       "val": "InvalidPassword",
       "offset": 46
+    },
+    {
+      "val": "invalid password",
+      "offset": 64
     }
   ],
-  "location": "LoginSteps.execute_login_service_for_negative_testcases(String)"
+  "location": "LoginSteps.execute_login_service_for_negative_testcases(String,String)"
 });
 formatter.result({
-  "duration": 332910549,
+  "duration": 277432596,
   "status": "passed"
 });
 formatter.scenario({
@@ -169,9 +186,10 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "execute login service for negative testcases \"BlankEmail\"",
+  "name": "execute login service for negative testcases \"BlankEmail\" \"Missing email or username\"",
   "matchedColumns": [
-    0
+    0,
+    1
   ],
   "keyword": "Then "
 });
@@ -180,12 +198,16 @@ formatter.match({
     {
       "val": "BlankEmail",
       "offset": 46
+    },
+    {
+      "val": "Missing email or username",
+      "offset": 59
     }
   ],
-  "location": "LoginSteps.execute_login_service_for_negative_testcases(String)"
+  "location": "LoginSteps.execute_login_service_for_negative_testcases(String,String)"
 });
 formatter.result({
-  "duration": 760171505,
+  "duration": 344179049,
   "status": "passed"
 });
 formatter.scenario({
@@ -204,9 +226,10 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "execute login service for negative testcases \"BlankPassword\"",
+  "name": "execute login service for negative testcases \"BlankPassword\" \"Missing password\"",
   "matchedColumns": [
-    0
+    0,
+    1
   ],
   "keyword": "Then "
 });
@@ -215,12 +238,16 @@ formatter.match({
     {
       "val": "BlankPassword",
       "offset": 46
+    },
+    {
+      "val": "Missing password",
+      "offset": 62
     }
   ],
-  "location": "LoginSteps.execute_login_service_for_negative_testcases(String)"
+  "location": "LoginSteps.execute_login_service_for_negative_testcases(String,String)"
 });
 formatter.result({
-  "duration": 273271007,
+  "duration": 341841915,
   "status": "passed"
 });
 formatter.scenario({
@@ -239,9 +266,10 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "execute login service for negative testcases \"NoEmail\"",
+  "name": "execute login service for negative testcases \"NoEmail\" \"Missing email or username\"",
   "matchedColumns": [
-    0
+    0,
+    1
   ],
   "keyword": "Then "
 });
@@ -250,12 +278,16 @@ formatter.match({
     {
       "val": "NoEmail",
       "offset": 46
+    },
+    {
+      "val": "Missing email or username",
+      "offset": 56
     }
   ],
-  "location": "LoginSteps.execute_login_service_for_negative_testcases(String)"
+  "location": "LoginSteps.execute_login_service_for_negative_testcases(String,String)"
 });
 formatter.result({
-  "duration": 241934650,
+  "duration": 343790204,
   "status": "passed"
 });
 formatter.scenario({
@@ -274,9 +306,10 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "execute login service for negative testcases \"NoPassword\"",
+  "name": "execute login service for negative testcases \"NoPassword\" \"user not found\"",
   "matchedColumns": [
-    0
+    0,
+    1
   ],
   "keyword": "Then "
 });
@@ -285,12 +318,16 @@ formatter.match({
     {
       "val": "NoPassword",
       "offset": 46
+    },
+    {
+      "val": "user not found",
+      "offset": 59
     }
   ],
-  "location": "LoginSteps.execute_login_service_for_negative_testcases(String)"
+  "location": "LoginSteps.execute_login_service_for_negative_testcases(String,String)"
 });
 formatter.result({
-  "duration": 322436732,
+  "duration": 244719366,
   "status": "passed"
 });
 });
