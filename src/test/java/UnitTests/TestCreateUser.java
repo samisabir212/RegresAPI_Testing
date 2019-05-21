@@ -10,7 +10,7 @@ public class TestCreateUser extends Constants {
 	@Test(enabled = true)
 	public void testCreateUser() {
 		
-		CreateUser.createUser();
+		CreateUser.createUser("successfulTest");
 	}
 
 }

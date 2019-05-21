@@ -12,3 +12,4 @@ Lib/Lib.class
 Lib/Logger.class
 UnitTests/TestCreateUser.class
 UnitTests/testExtentReportertestNG.class
+Steps/CreateUserSteps.class

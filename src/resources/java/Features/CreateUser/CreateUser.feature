@@ -2,9 +2,14 @@ Feature: CreateUser
 
 	CreateUser service creates a new user in the system
 
-Scenario: 
+@CREATEUSER
+Scenario Outline: 
 
-	Given I send a request to create a new user
-	Then I validate that the user was created
+	Then execute create user webservice and validate the user was created successfully "<Testname>"
 	
+	
+	Examples:
+	
+	|Testname 			  |
+	|SuccessfulCreateUser |
 	

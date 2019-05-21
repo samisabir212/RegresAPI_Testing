@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="18.211" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="14.862" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="cucumber.options" value="--tags @Negative"/>
+    <property name="cucumber.options" value="--tags @CREATEUSER"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.161-b12"/>
     <property name="gopherProxySet" value="false"/>
@@ -26,10 +26,10 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/sami/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf708590854530490307.tmp"/>
+    <property name="classworlds.conf" value="/Users/sami/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4805626119217976244.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/sami/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="suitexmlFile" value="/Users/sami/Desktop/eclipse-workspace2k19/RegresAPI_Testing/src/resources/java/TestNG/testng.xml"/>
+    <property name="suitexmlFile" value="src/resources/java/TestNG/Reqres_TestNG_Runner.xml"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean test -DsuitexmlFile=/Users/sami/Desktop/eclipse-workspace2k19/RegresAPI_Testing/src/resources/java/TestNG/testng.xml -Dcucumber.options=--tags @Negative"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean test -DsuitexmlFile=src/resources/java/TestNG/Reqres_TestNG_Runner.xml -Dcucumber.options=--tags @CREATEUSER"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -63,5 +63,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="feature" classname="Runners.RegresRunner" time="5.942"/>
+  <testcase name="feature" classname="Runners.RegresRunner" time="2.256"/>
 </testsuite>

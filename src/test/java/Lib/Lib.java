@@ -321,7 +321,7 @@ public class Lib {
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		XSSFSheet sheet = workbook.createSheet("Result");
 		String[] headers = new String[] { "Date", "Enviornment", "Application", "Account Status", "Service Name",
-				"Test Name", "Status","totalValidations","PassedValidations","FailedValidations", "Endpoint", "RC ticket", "Release Number",
+				"Test Name", "Status", "Endpoint", "RC ticket", "Release Number",
 				"Comment"};
 
 		// System.out.println("Creating excel");
@@ -968,55 +968,7 @@ public class Lib {
 		}
 	}
 
-	public static void writeExcel1(String date, String Env, String calltype,
-			String app, String sername, String status, String token,
-			String accstatus, String testname, String expRcode,
-			String actRcode, String expScode, String actScode,
-			String statusMsg, String endpoint, String RC, String release)
-			throws IOException {
-
-		XSSFWorkbook workbook = new XSSFWorkbook();
-		XSSFSheet sheet = workbook.createSheet("Result");
-		Object[][] datatypes = {
-				{ "Date", "Enviornment", "Call Type/Region", "Application",
-						"Service Name", "Status", "Token", "Account Status",
-						"Test Name", "Exp RCode", "Act RCode", "Exp SCode",
-						"Act SCode", "Status Message", "Endpoint", "RC ticket",
-						"Release Number" },
-				{ date, Env, calltype, app, sername, status, token, accstatus,
-						testname, expRcode, actRcode, expScode, actScode,
-						statusMsg, endpoint, RC, release } };
-
-		int rowNum = 0;
-		System.out.println("Creating excel");
-
-		for (Object[] datatype : datatypes) {
-			Row row = sheet.createRow(rowNum++);
-			int colNum = 0;
-			for (Object field : datatype) {
-				Cell cell = row.createCell(colNum++);
-				if (field instanceof String) {
-					cell.setCellValue((String) field);
-				} else if (field instanceof Integer) {
-					cell.setCellValue((Integer) field);
-				}
-			}
-		}
-
-		try {
-			FileOutputStream outputStream = new FileOutputStream("");
-			workbook.write(outputStream);
-			workbook.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		System.out.println("Done");
-
-	}
-
+	
 	public static void writeExcel2(String File_name) throws IOException {
 
 		XSSFWorkbook workbook = new XSSFWorkbook();

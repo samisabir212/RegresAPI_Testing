@@ -36,27 +36,26 @@ public class RegresRunner extends AbstractTestNGCucumberTests {
 		String currentDate = Lib.getcurrentdateyyMMddHHmm();
 		extentReporter = new ExtentHtmlReporter("./Reports/RegressionExtentReport"+currentDate+".html");
 		extent = new ExtentReports();
-
-	    
+  
         // attach the reporter which we created in Step 1
-	    extent.attachReporter(RegresRunner.extentReporter);
+	    extent.attachReporter(extentReporter);
 		
-		projpath = "/Users/sami/Desktop/Automation/sidrissi/Reqres/Runs/";
-
-		// create reqresAPI results folder
-		String runsFolderPath = createRunResultFolder(projpath);
-
-		// create log folder
-		String logFolderPath = Lib.createLogFolder(runsFolderPath);
-
-		String LoginLogFolder = logFolderPath + "/Login";
-		String loginLogFolderPath = Lib.createLogFolder_for_Service(LoginLogFolder, "Login");
-		System.out.println("Login Log folder path : " + loginLogFolderPath);
-
-		// create excel sheet with columns
-		Constants.Constants.excelResultsPath = runsFolderPath+"/RunResults_Reqres.xlsx";
-		
-		Lib.create_SetupExcelResultsSheet(Constants.Constants.excelResultsPath);
+//		projpath = "/Users/sami/Desktop/Automation/sidrissi/Reqres/Runs/";
+//
+//		// create reqresAPI results folder
+//		String runsFolderPath = createRunResultFolder(projpath);
+//
+//		// create log folder
+//		String logFolderPath = Lib.createLogFolder(runsFolderPath);
+//
+//		String LoginLogFolder = logFolderPath + "/Login";
+//		String loginLogFolderPath = Lib.createLogFolder_for_Service(LoginLogFolder, "Login");
+//		System.out.println("Login Log folder path : " + loginLogFolderPath);
+//
+//		// create excel sheet with columns
+//		Constants.Constants.excelResultsPath = runsFolderPath+"/RunResults_Reqres.xlsx";
+//		
+//		Lib.create_SetupExcelResultsSheet(Constants.Constants.excelResultsPath);
 		
 
 	}
