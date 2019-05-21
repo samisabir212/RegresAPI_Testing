@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="2429" started-at="2019-05-21T04:36:17Z" finished-at="2019-05-21T04:36:19Z">
+  <suite name="Regression Suite" duration-ms="2277" started-at="2019-05-21T04:38:05Z" finished-at="2019-05-21T04:38:07Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runners.RegresRunner@704a52ec]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Regres" duration-ms="2429" started-at="2019-05-21T04:36:17Z" finished-at="2019-05-21T04:36:19Z">
+    <test name="Regres" duration-ms="2277" started-at="2019-05-21T04:38:05Z" finished-at="2019-05-21T04:38:07Z">
       <class name="Runners.RegresRunner">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="beforeSuite" is-config="true" duration-ms="190" started-at="2019-05-21T00:36:17Z" finished-at="2019-05-21T00:36:17Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="beforeSuite" is-config="true" duration-ms="178" started-at="2019-05-21T00:38:04Z" finished-at="2019-05-21T00:38:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="setUpClass" is-config="true" duration-ms="180" started-at="2019-05-21T00:36:17Z" finished-at="2019-05-21T00:36:17Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="setUpClass" is-config="true" duration-ms="179" started-at="2019-05-21T00:38:05Z" finished-at="2019-05-21T00:38:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-05-21T00:36:17Z" finished-at="2019-05-21T00:36:17Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-05-21T00:38:05Z" finished-at="2019-05-21T00:38:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runners.RegresRunner@704a52ec]" name="feature" duration-ms="2161" started-at="2019-05-21T00:36:17Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-21T00:36:19Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runners.RegresRunner@704a52ec]" name="feature" duration-ms="2014" started-at="2019-05-21T00:38:05Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-21T00:38:07Z">
           <params>
             <param index="0">
               <value>
@@ -33,15 +33,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-05-21T00:36:19Z" finished-at="2019-05-21T00:36:19Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-05-21T00:38:07Z" finished-at="2019-05-21T00:38:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2019-05-21T00:36:19Z" finished-at="2019-05-21T00:36:19Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2019-05-21T00:38:07Z" finished-at="2019-05-21T00:38:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="afterSuite" is-config="true" duration-ms="276" started-at="2019-05-21T00:36:24Z" finished-at="2019-05-21T00:36:25Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Runners.RegresRunner@704a52ec]" name="afterSuite" is-config="true" duration-ms="227" started-at="2019-05-21T00:38:12Z" finished-at="2019-05-21T00:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
