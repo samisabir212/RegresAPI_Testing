@@ -5,9 +5,11 @@
     <classes>
       <class name="Runners.RegresRunner">
         <methods>
+          <include name="afterClass"/>
           <include name="setUpClass"/>
           <include name="beforeSuite"/>
-          <include name="feature" invocation-numbers="0 1 2"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="tearDownClass"/>
         </methods>

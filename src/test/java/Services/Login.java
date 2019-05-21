@@ -60,7 +60,7 @@ public class Login extends Constants {
 
 		System.out.println("accessToken : " + accessToken);
 
-		expectedResponseStatusCode = 400;
+		expectedResponseStatusCode = 200;
 
 		if (expectedResponseStatusCode == actualResponseStatusCode && responseBody.contains("token")) {
 
@@ -86,8 +86,8 @@ public class Login extends Constants {
 			}
 		}
 
-		Lib.excelwrite(excelResultsPath, new Object[] { Lib.getcurrentdate(), Environment, "Reqres",
-				Constants.ACCOUNTSTATUS, "Login", testname, tStatus, "n/a", "RC-8989", "1.0", comment });
+//		Lib.excelwrite(excelResultsPath, new Object[] { Lib.getcurrentdate(), Environment, "Reqres",
+//				Constants.ACCOUNTSTATUS, "Login", testname, tStatus, "n/a", "RC-8989", "1.0", comment });
 
 	}
 

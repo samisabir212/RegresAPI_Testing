@@ -93,7 +93,7 @@ public class RegresRunner extends AbstractTestNGCucumberTests {
 
 		//after all executions move the whole directory to a s3 bucket
 		//copy folder to s3 bucket in the AWS Cloud
-		Aws_util.uploadResultsToS3Bucket(projpath);
+//		Aws_util.uploadResultsToS3Bucket(projpath);
 		
 		
 		  // Flush method will write the test in report- This is mandatory step  
