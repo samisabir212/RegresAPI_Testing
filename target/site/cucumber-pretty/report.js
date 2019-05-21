@@ -1,70 +1,70 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("CreateUser/CreateUser.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login/Login.feature");
 formatter.feature({
   "line": 1,
-  "name": "CreateUser",
-  "description": "\nCreateUser service creates a new user in the system",
-  "id": "createuser",
+  "name": "Login feature webservice",
+  "description": "\n\nas a user i want to login so i can access the application\ntherefor when a user logs in the user should get an access token.",
+  "id": "login-feature-webservice",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 6,
+  "line": 9,
   "name": "",
-  "description": "",
-  "id": "createuser;",
+  "description": "\nUser should get an access token after loggining in",
+  "id": "login-feature-webservice;",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 5,
-      "name": "@CREATEUSER"
+      "line": 8,
+      "name": "@Login"
     }
   ]
 });
 formatter.step({
-  "line": 8,
-  "name": "execute create user webservice and validate the user was created successfully \"\u003cTestname\u003e\"",
+  "line": 13,
+  "name": "execute login webservice and login successfully \"\u003cTestname\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 11,
+  "line": 15,
   "name": "",
   "description": "",
-  "id": "createuser;;",
+  "id": "login-feature-webservice;;",
   "rows": [
     {
       "cells": [
         "Testname"
       ],
-      "line": 13,
-      "id": "createuser;;;1"
+      "line": 17,
+      "id": "login-feature-webservice;;;1"
     },
     {
       "cells": [
-        "SuccessfulCreateUser"
+        "successful_login"
       ],
-      "line": 14,
-      "id": "createuser;;;2"
+      "line": 18,
+      "id": "login-feature-webservice;;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 14,
+  "line": 18,
   "name": "",
-  "description": "",
-  "id": "createuser;;;2",
+  "description": "\nUser should get an access token after loggining in",
+  "id": "login-feature-webservice;;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 5,
-      "name": "@CREATEUSER"
+      "line": 8,
+      "name": "@Login"
     }
   ]
 });
 formatter.step({
-  "line": 8,
-  "name": "execute create user webservice and validate the user was created successfully \"SuccessfulCreateUser\"",
+  "line": 13,
+  "name": "execute login webservice and login successfully \"successful_login\"",
   "matchedColumns": [
     0
   ],
@@ -73,14 +73,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "SuccessfulCreateUser",
-      "offset": 79
+      "val": "successful_login",
+      "offset": 49
     }
   ],
-  "location": "CreateUserSteps.execute_CreateUser_webservice_successfully(String)"
+  "location": "LoginSteps.execute_login_webservice_and_login_successfully(String)"
 });
 formatter.result({
-  "duration": 2190152409,
+  "duration": 2096927049,
   "status": "passed"
 });
 });
