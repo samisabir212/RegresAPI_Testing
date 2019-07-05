@@ -15,7 +15,7 @@ Scenario Outline:
 	Examples:
 	
 	|Testname 	      |
-	|successful_login |
+	|SuccessfulLogin |
 	
 	
 

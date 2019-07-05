@@ -40,7 +40,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "successful_login"
+        "SuccessfulLogin"
       ],
       "line": 18,
       "id": "login-feature-webservice;;;2"
@@ -64,7 +64,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 13,
-  "name": "execute login webservice and login successfully \"successful_login\"",
+  "name": "execute login webservice and login successfully \"SuccessfulLogin\"",
   "matchedColumns": [
     0
   ],
@@ -73,14 +73,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "successful_login",
+      "val": "SuccessfulLogin",
       "offset": 49
     }
   ],
   "location": "LoginSteps.execute_login_webservice_and_login_successfully(String)"
 });
 formatter.result({
-  "duration": 1951291000,
+  "duration": 1932716502,
   "status": "passed"
 });
 });

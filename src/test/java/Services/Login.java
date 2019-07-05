@@ -26,7 +26,7 @@ public class Login extends Constants {
 
 		// call createTest method and pass the name of TestCase- Based on your
 		// requirement
-		ExtentTest logger = RegresRunner.extent.createTest("LoginTest", "this is a description of the test");
+		ExtentTest logger = RegresRunner.extent.createTest(testname, "this is a description of the test");
 
 		endpoint = "https://reqres.in/api/login";
 		RestAssured.baseURI = endpoint;

@@ -24,7 +24,6 @@ public class LoginSteps {
 	@Then("^execute login service for negative testcases \"([^\"]*)\" \"([^\"]*)\"$")
 	public void execute_login_service_for_negative_testcases(String testname,String expectedErrorMessage) {
 		
-		System.out.println("Look here!");
 		System.out.println(expectedErrorMessage);
 		Login.NegativeTestCases_For_Login_webservice("eve.holt@reqres.in", "cityslicka", testname, expectedErrorMessage);
 		
